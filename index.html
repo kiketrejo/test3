@@ -19,12 +19,13 @@
             flex-direction: column;
         }
 
-        /* Video a pantalla completa */
+        /* Video a pantalla completa en formato vertical */
         #video-background {
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
             height: 100%;
             object-fit: cover;
             z-index: -1; /* Colocar el video detrás del contenido */
@@ -54,7 +55,7 @@
 
     <!-- Video de fondo -->
     <video autoplay muted loop id="video-background">
-        <source src="https://videos.pexels.com/video-files/2075170/2075170-sd_640_360_25fps.mp4">
+        <source src="https://videos.pexels.com/video-files/2075170/2075170-sd_640_360_25fps.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 
