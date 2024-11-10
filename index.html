@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de Fondo - XICO.BIT</title>
+    <style>
+        /* Estilos para el contenedor y el video */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Video a pantalla completa */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Colocar el video detrás del contenido */
+        }
+
+        /* Texto central */
+        .centered-text {
+            position: relative;
+            font-size: 4em;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1; /* Asegura que el texto esté sobre el video */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la visibilidad del texto */
+        }
+
+        /* Imagen centrada */
+        .centered-image {
+            position: relative;
+            z-index: 1;
+            max-width: 50%; /* Ajustar el tamaño de la imagen */
+            margin-top: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="video-background">
+        <source src="https://videos.pexels.com/video-files/5652726/5652726-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Texto en el centro de la pantalla -->
+    <div class="centered-text">
+        
+    </div>
+
+    <!-- Imagen centrada en la pantalla -->
+    <img class="centered-image" src="https://i.ibb.co/g3jf2sc/Whats-App-Image-2024-10-14-at-12-23-31-PM-removebg-preview.png" alt="Imagen centrada">
+
+</body>
+</html>
+
